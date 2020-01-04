@@ -1,0 +1,3 @@
+{"title": "Protecting files under PD",
+  "protect_files": true, "local": {"uvm": "uvm_1", "pd": "pd_1", "rs": "", "uvm_count": 2},
+  "remote": {"uvm": "uvm_1", "rs": ""}, "testargs": [{}, {}, {}]}
