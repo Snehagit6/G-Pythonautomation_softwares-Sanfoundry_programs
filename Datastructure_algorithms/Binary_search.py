@@ -1,18 +1,24 @@
-l=[4,5,6,8,9]
-s=5
-ixo,ixn=0,len(l)-1
+def binary_search(x):
+    arr = [1,4,9,89,56]
 
-while ixn<=ixo:
+    l_i, f_i = len(arr)-1, 0
 
-    mid = (ixo + ixn) // 2
+    while l_i>f_i:
+        mid = (l_i+f_i)//2
+        if x == arr[mid]:
+            print(f"Element{x} found at {mid}")
+            return mid
+        elif x>arr[mid]:
+            f_i = mid+1
+        elif x<arr[mid]:
+            l_i= mid-1
+            
+    return -1
+        
 
-
-    if l[mid]==s:
-        print(f'{s} found at position:{mid}')
-    if l[mid]>s:
-        ixn=mid-1
-    elif l[mid]<s:
-        ixo=mid+1
+if __name__ =="__main__":
+    if binary_search(-9)==-1:
+        print("Element notfound")
 
 
 
