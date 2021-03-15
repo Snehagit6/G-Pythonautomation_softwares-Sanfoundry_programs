@@ -1,0 +1,17 @@
+def gcd(m, n):
+    # for i in range(1,min(m,n)+1):
+    #     if m%i ==0 and n%i ==0:
+    #         mrcf = i
+            
+    # return mrcf
+    #Alternative
+    i = min(m,n)
+    while i>0:
+        if m%i ==0 and n%i ==0:
+            return i
+        else:
+            i-=1
+    return "No common factor found"
+    
+    
+print(gcd(24,16))
