@@ -5,6 +5,7 @@ l = [2,73,89,4,0]
 def insertion_sort(l):
 
     for i in range(len(l)):
+        #min_pos is the position of element l[i] which has to be inserted in the preceeding list l[:i]
         min_pos =i
         while min_pos>0 and l[min_pos]<l[min_pos-1]:
 
